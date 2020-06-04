@@ -18,16 +18,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Share"),
         ),
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/w4.jpg'),
-              fit: BoxFit.cover,
-            )
-          ),
+        body: Center(
+          child: Text("RAMSOLFT"),
         )
-
-
       )
       //MyHomePage(title: 'Flutter Demo Home Page'),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'descripcion_place.dart';
 void main() {
   runApp(MyApp());
 }
@@ -18,11 +18,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Share"),
         ),
-        body: Center(
-          child: Text("RAMSOLFT"),
-        )
+        body: new DescriptionPlace(),
       )
-      //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

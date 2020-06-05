@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 import 'descripcion_place.dart';
+import 'review_list.dart';
+
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+
+  String descripcion = ''' Añade el widget visible al widget de layout Todos los widgets de layout tiene alguna de las siguientes: Una propiedad child que toma un único hijo – por ejemplo, Center o Container
+  
+  Una propiedad children que toma una lista de widgets – por ejemplo, Row, Column, ListView, o Stack.
+''';
+
+  String pathImage = "assets/img/w4.jpg";
+  String name ="Fredy Ramirez";
+  String details = "1 review 5 photos";
+  String comment = "There is a amazing place in Sri Lanka";
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,54 +31,20 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Share"),
         ),
-        body: new DescriptionPlace(),
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              new DescriptionPlace("Barcelona",4,descripcion),
+              new ReviewList(),
+            ],
+          ),
+        )
+
+
+
       )
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter--;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}

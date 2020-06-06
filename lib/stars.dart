@@ -2,18 +2,16 @@ import 'package:flutter/material.dart';
 
 class Stars extends StatelessWidget{
 
+  int tipoEstrella;
 
-  void star_
+  Stars(this.tipoEstrella);
 
   @override
   Widget build(BuildContext context) {
 
-
     //Estrella a la mitad
     final star_half= Container(
       margin: EdgeInsets.only(
-          top: 323.0,
-          right: 5.0
       ),
       child: Icon(
         Icons.star_half,
@@ -24,8 +22,7 @@ class Stars extends StatelessWidget{
     //Estrella vacia
     final star_border= Container(
       margin: EdgeInsets.only(
-          top: 323.0,
-          right: 5.0
+
       ),
       child: Icon(
         Icons.star_border,
@@ -35,8 +32,8 @@ class Stars extends StatelessWidget{
 
     final star= Container(
       margin: EdgeInsets.only(
-          top: 323.0,
-          right: 5.0
+
+
       ),
       child: Icon(
         Icons.star,
@@ -44,8 +41,27 @@ class Stars extends StatelessWidget{
       ),
     );
 
+    switch (this.tipoEstrella){
+      case 1:{
+        return star_half;
+      }
+      break;
+      case 2:{
+        return star_border;
+      }
+      break;
+      case 3:{
+        return star;
+      }
+      break;
 
-    return null;
+      defaul:{
+        return null;
+      }
+      break;
+    }
+
+
   }
 
 }

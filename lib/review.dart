@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'stars.dart';
+
 class Review extends StatelessWidget{
 
   String pathImage ;
@@ -60,11 +62,39 @@ class Review extends StatelessWidget{
       ),
     );
 
+    final userNameR = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            right: 20.0,
+            left: 20.0,
+        ),
+          child: Text(
+            name,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+            fontFamily: "Arc",
+            fontSize: 17.0
+            )
+          ),
+        ),
+        Row(
+          children: <Widget>[
+            Stars(3),
+            Stars(3),
+            Stars(3),
+            Stars(2),
+            Stars(1)
+          ],
+        )
+      ],
+    );
+
     //detalle del usuario
     final userDetails = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        userName,
+        userNameR,
         userInfo,
         userComment
       ],

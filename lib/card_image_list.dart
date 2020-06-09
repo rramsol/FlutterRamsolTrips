@@ -2,6 +2,7 @@ import 'package:com/card_image.dart';
 import 'package:flutter/material.dart';
 
 class CardImageList extends StatelessWidget{
+
   @override
   Widget build(BuildContext context) {
     return Container(

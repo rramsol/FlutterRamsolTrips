@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'descripcion_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,16 +30,16 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Share"),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              new DescriptionPlace("Barcelona",4,descripcion),
-              new ReviewList(),
-            ],
-          ),
+        body: Stack(
+          children: [
+            ListView(
+              children: [
+                 DescriptionPlace("Barcelona",4,descripcion),
+                 ReviewList(),
+              ],
+            ),
+            HeaderAppBar()
+          ],
         )
 
 

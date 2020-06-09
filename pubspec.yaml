@@ -45,6 +45,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/img/w4.jpg
+    - assets/img/uno.jpg
+    - assets/img/dos.jpg
+    - assets/img/tres.jpg
+    - assets/img/cuatro.jpg
+    - assets/img/cinco.jpg
+    
   fonts:
     - family: Arc
       fonts:

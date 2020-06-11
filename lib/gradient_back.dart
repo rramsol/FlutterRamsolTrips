@@ -9,7 +9,7 @@ GradientBack(this.texto);
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: 300.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -31,7 +31,7 @@ GradientBack(this.texto);
           fontWeight: FontWeight.bold
         ),
       ),
-      alignment: Alignment(-0.9,-0.6),
+      alignment: Alignment(0,-0.6),
     );
   }
 

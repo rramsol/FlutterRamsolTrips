@@ -14,11 +14,11 @@ class ReviewList extends StatelessWidget{
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        new Review(pathImage, name, details, comment),
-        new Review(pathImage, name, details, comment),
-        new Review(pathImage, name, details, comment),
-        new Review(pathImage, name, details, comment),
-        new Review(pathImage, name, details, comment)
+         Review(pathImage, name, details, comment),
+         Review(pathImage, name, details, comment),
+         Review(pathImage, name, details, comment),
+         Review(pathImage, name, details, comment),
+         Review(pathImage, name, details, comment)
       ],
     );
   }

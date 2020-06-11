@@ -66,7 +66,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-              top: 320.0,
+              top: 325.0,
               left: 20.0,
               right: 40.0
           ),
@@ -89,7 +89,6 @@ class DescriptionPlace extends StatelessWidget {
             star_border
           ],
         ),
-
       ],
     );
 

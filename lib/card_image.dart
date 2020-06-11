@@ -10,7 +10,7 @@ class CardImage extends StatelessWidget{
   Widget build(BuildContext context) {
     
     final card = Container (
-      height:350.0 ,
+      height:350.0,
       width: 250.0,
       margin: EdgeInsets.only(
         top: 80.0,
@@ -21,13 +21,13 @@ class CardImage extends StatelessWidget{
           fit: BoxFit.cover,
           image: AssetImage(pathImage),
         ),
-        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+        borderRadius: BorderRadius.all(Radius.circular(40.0)),
         shape: BoxShape.rectangle,
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black38,
-            blurRadius: 15.0,
-            offset: Offset(0.0,7.0)
+            blurRadius: 10.0,
+            offset: Offset(0.0,9.0)
           )
         ]
       ),

@@ -5,7 +5,7 @@ class BackgroundProfile extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      height: 400.0,
+      height: 325.0,
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
